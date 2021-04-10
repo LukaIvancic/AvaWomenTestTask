@@ -1,0 +1,10 @@
+/.idea/
+/target/
+automation-core.iml
+.DS_Store
+/META-INF/
+/classes/
+TestClass
+MANIFEST.MF
+/allure-report
+/allure-results
