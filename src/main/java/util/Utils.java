@@ -1,6 +1,5 @@
 package util;
 
-import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 
 public class Utils { //glavni setup za restassured
@@ -14,10 +13,5 @@ public class Utils { //glavni setup za restassured
 		String generatedstring= RandomStringUtils.randomAlphabetic(8);
 
 		return TESTING_EMAIL + "+" + generatedstring + TESTING_EMAIL_DOMAIN;
-
-
 	}
-
-
-
 }
