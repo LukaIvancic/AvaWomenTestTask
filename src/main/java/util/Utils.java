@@ -2,9 +2,9 @@ package util;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
-public class Utils { //glavni setup za restassured
+public class Utils {
 
-	//metode za rest assured za setup, da wrepujem
+
 	public static String TESTING_EMAIL = "humantesting69";
 	public static String TESTING_EMAIL_DOMAIN = "@gmail.com";
 

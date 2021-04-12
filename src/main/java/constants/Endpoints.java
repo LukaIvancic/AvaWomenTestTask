@@ -1,6 +1,6 @@
 package constants;
 
-public class Endpoints { //EP i BaseURI
+public class Endpoints {
 
 	public static final String BASE_URL = "https://test-eu-server-resolver.avawomen.com/server_resolver";
 	public static final String REGISTER = "/register";

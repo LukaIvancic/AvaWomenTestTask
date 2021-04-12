@@ -38,7 +38,7 @@ public class LoginTest {
 						Endpoints.LOGIN);
 		Assert.assertEquals(response.getStatusCode(), HttpStatus.SC_UNAUTHORIZED);
 		ErrorSimpleDTO error = response.getBody().as(ErrorSimpleDTO.class);
-		Assert.assertEquals(error.getErrorMessage(), Const.LOGIN_ERROR); //procitao sam body responsea i izmapirao ga
+		Assert.assertEquals(error.getErrorMessage(), Const.LOGIN_ERROR);
 
 	}
 }

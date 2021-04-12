@@ -1,12 +1,11 @@
 package util;
 
-import constants.Endpoints;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 import java.util.Map;
 
-public class Rest { //cupamo metode koje cu koristiti
+public class Rest {
 
 	public static <T> Response post( T body, String baseURI, String endpoint){
 
@@ -15,7 +14,7 @@ public class Rest { //cupamo metode koje cu koristiti
 				.body(body)
 				.contentType("application/json")
 				.log()
-				.all()//kao builder, puni obj koji je napravio nekim propertijima koji su bitni za request(u sebi ima i http klijenta i sve sto mu trebad a posalje request)
+				.all()
 				.when()
 				.post(endpoint);
 
@@ -28,7 +27,7 @@ public class Rest { //cupamo metode koje cu koristiti
 				.headers(header)
 				.contentType("application/json")
 				.log()
-				.all()//kao builder, puni obj koji je napravio nekim propertijima koji su bitni za request(u sebi ima i http klijenta i sve sto mu trebad a posalje request)
+				.all()
 				.when()
 				.post(endpoint);
 
